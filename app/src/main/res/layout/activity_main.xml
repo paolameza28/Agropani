@@ -6,24 +6,22 @@
     android:orientation="vertical"
     android:padding="16dp"
     android:background="@color/green"
-    tools:context="MainActivity">
+    tools:context=".MainActivity">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Iniciar sesion"
+        android:text="@string/iniciar_sesion1"
         android:textSize="50sp"
         android:gravity="center"
         android:textStyle="bold"
         android:layout_marginVertical="40dp"
-        android:textColor="@color/white">
-
-    </TextView>
+        android:textColor="@color/white"/>
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Usuario"
+        android:hint="@string/usuario"
         style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox">
 
         <com.google.android.material.textfield.TextInputEditText
@@ -36,7 +34,7 @@
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Contraseña"
+        android:hint="@string/contrase_a"
         style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox">
 
         <com.google.android.material.textfield.TextInputEditText
@@ -51,7 +49,7 @@
         android:id="@+id/bttIniciarSesion"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Iniciar Sesión"
+        android:text="@string/iniciar_sesion"
         android:layout_marginTop="16dp"
         style="@style/Widget.MaterialComponents.Button"/>
 

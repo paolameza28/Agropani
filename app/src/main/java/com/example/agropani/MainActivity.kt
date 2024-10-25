@@ -1,12 +1,11 @@
+package com.example.agropani
+
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
-import android.widget.EditText
-import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.example.agropani.MenuActivity
-import com.example.agropani.R
+import com.google.android.material.textfield.TextInputEditText
 import java.lang.Exception
 
 class MainActivity : AppCompatActivity() {
@@ -14,8 +13,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val usuario = findViewById<TextView>(R.id.tvUsuario)
-        val password = findViewById<TextView>(R.id.tvPassword)
+        // Cambiar TextView por TextInputEditText
+        val usuario = findViewById<TextInputEditText>(R.id.tvUsuario)
+        val password = findViewById<TextInputEditText>(R.id.tvPassword)
         val btnLogin = findViewById<Button>(R.id.bttIniciarSesion)
 
         btnLogin.setOnClickListener {
